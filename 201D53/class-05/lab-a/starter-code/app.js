@@ -119,11 +119,27 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  // var testArray = [2, 3, 4];
+  var multiplyTWO = multiply(testArray[0], testArray[1]);
+  multiplyTWO = parseInt(multiplyTWO);
+
+  console.log(multiplyTWO);
+
+  var multiplyTHREE = multiply(multiplyTWO, testArray[2]);
+  multiplyTHREE = parseInt(multiplyTHREE);
+
+  console.log(multiplyTHREE);
+
+  var resultOfMulti = ('The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + multiplyTHREE + '.');
+
+  console.log(resultOfMulti);
+
+  return [multiplyTHREE, resultOfMulti];
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
